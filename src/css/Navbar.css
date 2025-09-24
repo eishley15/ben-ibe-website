@@ -1,0 +1,118 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #FFF8F0;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+/* Logo/Brand Section */
+.navbar-brand {
+  flex-shrink: 0;
+}
+
+.brand-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #333;
+}
+
+.nav-link.active {
+  color: #9D332A;
+  font-weight: 500;
+}
+
+/* Sign Up Button */
+.navbar-actions {
+  flex-shrink: 0;
+}
+
+.signup-btn {
+  background-color: #A89F53;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.signup-btn:hover {
+  background-color: #a04944;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(184, 84, 80, 0.3);
+  color: #A89F53;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+  
+  .navbar-links {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .navbar-links {
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  .signup-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-links {
+    display: none; /* You might want to add a mobile menu here */
+  }
+  
+  .navbar {
+    justify-content: space-between;
+  }
+}
