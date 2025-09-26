@@ -48,9 +48,12 @@ const ProductCard = ({ product }) => {
         </div>
 
         {/* Add to Cart Button, now inside the same container */}
-        <button className="bg-[#FFF9F0] text-[#9C332A] !px-4 !py-1 !m-2 rounded-full font-normal text-sm hover:bg-[#8e7362] transition-colors self-end mt-2">
+        <Link
+          to={`/product/${product._id}`}
+          className="bg-[#FFF9F0] !text-[#9C332A] !px-4 !py-1 !m-2 rounded-full font-normal text-sm hover:bg-[#8e7362] transition-colors self-end mt-2"
+        >
           Add to Cart
-        </button>
+        </Link>
       </div>
     </div>
   );

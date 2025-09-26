@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const VideoCarouselSection = () => {
   const [api, setApi] = useState(null);
@@ -84,9 +85,12 @@ const VideoCarouselSection = () => {
             together.
           </p>
           <br />
-          <button className="bg-[#A89F53] text-[#FFF8F0] !px-6 !py-3 rounded-lg font-bold hover:bg-[#8f8746] transition">
+          <Link
+            to="/products"
+            className="bg-[#A89F53] !text-[#FFF8F0] !px-6 !py-3 rounded-lg font-bold hover:bg-[#8f8746] transition"
+          >
             Shop Now
-          </button>
+          </Link>
         </div>
         {/* Right Column: Video Carousel */}
         <div className="relative flex-1 w-full max-w-md">

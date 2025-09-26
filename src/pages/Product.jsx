@@ -140,7 +140,7 @@ const ProductPage = () => {
       <main className="container mx-auto px-4 py-8 !px-20 !h-auto flex-grow">
         {/* Recommended For You section */}
         <section className="text-left my-12 !px-40 !mx-20">
-          <h2 className="text-4xl font-bold text-[#9C332A] !mb-4">
+          <h2 className="text-4xl font-bold text-[#9C332A] !mb-4 w-3/4 !pl-30 ">
             Recommended For You
           </h2>
           <div className="flex justify-center mb-8">
